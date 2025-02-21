@@ -87,6 +87,8 @@ function App() {
 
   const paginate = (pageNumber) => setCurrentPage(pageNumber);
 
+  
+
   useEffect(() => {
     localStorage.setItem("favorites", JSON.stringify(favorites));
   }, [favorites]);

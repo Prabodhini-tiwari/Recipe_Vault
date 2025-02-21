@@ -1,9 +1,11 @@
-import { defineConfig } from 'vite'
-import tailwind from "tailwindcss"
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
+import tailwind from "tailwindcss";
 
-// https://vitejs.dev/config/
 export default defineConfig({
-   css:{
-    postcss:[tailwind]
-   }
-})
+  plugins: [react()],
+  css: {
+    postcss: [tailwind],
+  },
+  base: "/Recipe_Vault/", // Replace REPO_NAME with your actual repository name
+});
